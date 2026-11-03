@@ -370,16 +370,15 @@ button.danger{background:#261719;border-color:#633239}
 .battle-result-icon,.timer-alarm-icon{background:#173823;border-color:#39744b}
 .battle-result-reward,.coupon-progress{background:#211c11}
 .session-reward-panel{background:#0d130f;border:1px solid #29392f;border-radius:14px}
-.session-reward-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:9px}
-.session-reward-item{min-width:0;padding:11px 12px;background:#101712;border-color:#2a3a2f}
+.session-reward-grid{grid-template-columns:minmax(0,1fr);gap:9px;align-items:stretch}
+.session-reward-item{width:100%;height:auto;min-height:0;min-width:0;padding:13px 15px;background:#101712;border-color:#2a3a2f}
 .session-reward-item small{white-space:normal;letter-spacing:.06em;color:#91a99a;font-size:8px}
 .session-reward-item strong{white-space:normal;overflow-wrap:break-word;word-break:normal;hyphens:auto;font-size:clamp(13px,1.4vw,17px);line-height:1.2}
 .session-reward-item.power{background:linear-gradient(145deg,#13291b,#101711);border-color:#39744d}
 .session-reward-item.power strong{font-size:clamp(18px,2vw,23px);color:#83e6a6}
 .session-reward-item em{white-space:normal;overflow-wrap:break-word;color:#82958a;font-size:8px}
 .session-reward-status b{color:#8ce9aa}
-@media(max-width:800px){.session-reward-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media(max-width:430px){.session-reward-grid{grid-template-columns:minmax(0,1fr);gap:7px}.session-reward-item{padding:9px}.session-reward-item strong{font-size:14px}.session-reward-item.power strong{font-size:19px}}
+@media(max-width:430px){.session-reward-grid{gap:7px}.session-reward-item{padding:11px 12px}.session-reward-item strong{font-size:14px}.session-reward-item.power strong{font-size:19px}}
 input,select{background:#0b100d;border-color:#2b3c31;color:var(--text)}
 input:focus,select:focus{border-color:#55d98d;box-shadow:0 0 0 3px #55d98d16}
 ::selection{background:#286b426b;color:#f2fff6}
